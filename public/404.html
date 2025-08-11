@@ -1,4 +1,6 @@
-<!-- public/404.html -->
+<!-- public/404.html - SPA fallback for GitHub Pages -->
 <script>
-  location.replace('/unfold-tribe-hub/' + location.hash.slice(1));
+  // Redirect 404s to the SPA entry with hash routing and preserve the path
+  var path = location.pathname.replace(/^\/unfold-tribe-hub\//, "");
+  location.replace('/unfold-tribe-hub/#/' + path + location.search + location.hash);
 </script>

@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/unfold-tribe-hub/', // ✅ Required for GitHub Pages
+  base: "./", // ✅ Relative base works on both GitHub Pages and Vercel
 
   server: {
     host: "::",
